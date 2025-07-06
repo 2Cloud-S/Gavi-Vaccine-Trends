@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "I am Afnan Khan, a student at David Kanes Data Science Bootcamp. You can find my GitHub here: https://github.com/2Cloud-S and email me at inbox.afnankhan@gmail.com.\nThis project replicates a key paper in global health and development economics. You can view the GitHub repository at https://github.com/2Cloud-S/Gavi_Replication.\nThis project was created as part of Kane’s Data Science Bootcamp."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Gavi Vaccine Program: A Replication Study",
+    "section": "",
+    "text": "The effectiveness of foreign aid can be measured by how many lives it saves and how many children it vaccinates. I am using the replication package from OpenICPSR (Project 193942), which contains the original datasets used in the paper, including vaccine coverage data from WHO/UNICEF and Gavi vaccine introduction dates. The data has not yet been cleaned, but I plan to replicate key results by grouping vaccine launches into cohort periods and calculating national averages over time. Gavi-supported vaccines led to a 2–5 percentage point increase in immunization coverage across low-income countries. \nThis project replicates table 1 and 2 from “Effective Foreign Aid: Evidence from Gavi’s Vaccine Program” (Shastry & Tortorice, 2022), which estimates the effect of Gavi’s funding on vaccine coverage and child mortality. Using cleaned WHO/UNICEF survey data and Gavi vaccine introduction timelines, we recreate Tables 1 and 2, confirming that Gavi funding led to measurable public health improvements. Results suggest a 2–5 percentage point increase in vaccine coverage and 0.5–2 fewer deaths per 1,000 children for supported vaccines. These findings reinforce the idea that well-structured foreign aid programs can have high returns."
+  },
+  {
+    "objectID": "sources.html",
+    "href": "sources.html",
+    "title": "Data Sources",
+    "section": "",
+    "text": "Data Sources\nThe data for this replication study comes from two main sources:\n\nGavi Vaccine Introduction Dates: A CSV file listing the year of vaccine launch by country and type, obtained from Gavi’s published databases.\nWHO/UNICEF Vaccine Coverage Surveys: Coverage estimates for various vaccines and cohorts, derived from household survey data across 150+ countries.\n\nWe cleaned the data by renaming columns, filtering for introduced vaccines, and assigning vaccines to mortality causes based on WHO guidelines. Some cohorts or vaccine records with missing or inconsistent launch dates were excluded."
+  }
+]
