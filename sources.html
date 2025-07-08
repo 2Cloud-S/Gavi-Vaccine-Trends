@@ -129,12 +129,11 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="data-sources" class="level1">
 <h1>Data Sources</h1>
-<p>The data for this replication study comes from two main sources:</p>
+<p>The data for this project comes from a single source:</p>
 <ul>
-<li><strong>Gavi Vaccine Introduction Dates:</strong> A CSV file listing the year of vaccine launch by country and type, obtained from Gavi’s published databases.</li>
-<li><strong>WHO/UNICEF Vaccine Coverage Surveys:</strong> Coverage estimates for various vaccines and cohorts, derived from household survey data across 150+ countries.</li>
+<li><strong>Gavi Vaccine Introduction Dates:</strong> A CSV file listing the year each Gavi-supported vaccine was introduced by country and vaccine type, obtained from Gavi’s publicly available data.</li>
 </ul>
-<p>We cleaned the data by renaming columns, filtering for introduced vaccines, and assigning vaccines to mortality causes based on WHO guidelines. Some cohorts or vaccine records with missing or inconsistent launch dates were excluded.</p>
+<p>The data was cleaned by standardizing vaccine names, removing duplicates, filtering for introduced vaccines, and converting launch dates into year values for analysis and visualization.</p>
 
 
 </section>
@@ -212,7 +211,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/2Cloud-S\.github\.io\/Gavi_Replication\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
